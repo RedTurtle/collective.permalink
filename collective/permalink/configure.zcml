@@ -6,6 +6,7 @@
     i18n_domain="collective.permalink">
 
   <five:registerPackage package="." initialize=".initialize" />
+  <include package=".browser" />
 
   <genericsetup:registerProfile
       name="default"
@@ -16,7 +17,4 @@
       />
   <!-- -*- extra stuff goes here -*- -->
 
-  <i18n:registerTranslations directory="locales" />
-  
-  
 </configure>
