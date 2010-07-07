@@ -6,7 +6,19 @@
     i18n_domain="collective.permalink">
 
   <five:registerPackage package="." initialize=".initialize" />
+
+  <permission
+     id="collective.permalink.ViewPermalink"
+     title="View permalink"
+     />
+
   <include package=".browser" />
+
+  <adapter 
+      for="Products.Archetypes.interfaces._base.IBaseObject"
+      provides=".interfaces.IPermalinkProvider"
+      factory=".adapters.ATPermalinkAdapter"
+	  />
 
   <genericsetup:registerProfile
       name="default"
@@ -15,6 +27,5 @@
       description="Installs the collective.permalink package"
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
-  <!-- -*- extra stuff goes here -*- -->
 
 </configure>

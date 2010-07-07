@@ -1,12 +1,19 @@
 Manual
 ======
 
-This product will add a `permalink`__ to every Plone content, using the Plone *resolveuid* feature.
+This product will add a `permalink`__ to every supported Plone content, using the Plone *resolveuid*
+feature.
 
 __ http://en.wikipedia.org/wiki/Permalink
 
-This will not work (and show anything) for contents without the *UID* information. The new resource will
-be added to the *document actions* section.
+This will not work (and show anything) for contents without the *UID* information. You can however 
+customize and develop additional adapters for providing peralink, yours non-AT contents (or customize the
+default one).
+
+The new resource will be added to the *document actions* section.
+
+.. image:: http://keul.it/images/plone/collective.permalink-0.1.0.png
+   :alt: Permalink preview in a basic Plone site
 
 Credits
 =======
@@ -28,7 +35,4 @@ This product was developed by RedTurtle Technology team.
 .. image:: http://www.redturtle.net/redturtle_banner.png
    :alt: RedTurtle Technology Site
    :target: http://www.redturtle.net/
-
-
-
 

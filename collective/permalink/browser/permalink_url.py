@@ -1,15 +1,27 @@
 # -*- coding: utf-8 -*-
 
 from Products.Five import BrowserView
-from Products.CMFCore.utils import getToolByName
+from plone.memoize.view import memoize
+from collective.permalink.interfaces import IPermalinkProvider
 
 class PermalinkUrlView(BrowserView):
-    """View for showing permalink on Archetype contents"""
+    """View for showing permalink on Plone contents"""
 
     def __call__(self):
         context = self.context
-        portal_url = getToolByName(context, 'portal_url')
-        return portal_url()+'/resolveuid/%s' % context.UID()
+        return context.permalink
+
+
+    @property
+    @memoize
+    def permalink(self):
+        """Get the permalink info from the context"""
+        try:
+            return IPermalinkProvider(self.context).getPermalink()
+        except TypeError:
+            return None
+
     
     def hasPermalink(self):
-        return True
+        """True of False if the context give a permalink or not"""
+        return self.permalink

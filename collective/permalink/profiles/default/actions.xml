@@ -8,7 +8,7 @@
    <property name="url_expr">string:${object/@@permalink_url}</property>
    <property name="icon_expr"></property>
    <property
-      name="available_expr">nocall:object/@@permalink_url/hasPermalink</property>
+      name="available_expr">object/@@permalink_url/hasPermalink</property>
    <property name="permissions">
     <element value="View permalink"/>
    </property>

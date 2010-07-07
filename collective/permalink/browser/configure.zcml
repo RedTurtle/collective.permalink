@@ -8,7 +8,7 @@
       name="permalink_url"
       class=".permalink_url.PermalinkUrlView"
 	  allowed_attributes="hasPermalink"
-      permission="zope2.View"
+      permission="collective.permalink.ViewPermalink"
       />
 
 </configure>
