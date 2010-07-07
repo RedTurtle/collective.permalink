@@ -7,8 +7,8 @@ feature.
 __ http://en.wikipedia.org/wiki/Permalink
 
 This will not work (and show anything) for contents without the *UID* information. You can however 
-customize and develop additional adapters for providing peralink, yours non-AT contents (or customize the
-default one).
+customize and develop additional adapters for providing permalink for yours non-AT contents (or customize
+the default one).
 
 The new resource will be added to the *document actions* section.
 
