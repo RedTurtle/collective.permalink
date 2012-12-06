@@ -15,7 +15,7 @@
   <include package=".browser" />
 
   <adapter 
-      for="Products.Archetypes.interfaces._base.IBaseObject"
+      for="Products.Archetypes.interfaces.IBaseObject"
       provides=".interfaces.IPermalinkProvider"
       factory=".adapters.ATPermalinkAdapter"
 	  />

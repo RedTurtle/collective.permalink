@@ -1,6 +1,11 @@
 Changelog
 =========
 
+0.2.0 (Unreleased)
+------------------
+
+* Fixing import for Plone 4.2 [keul]
+
 0.1.0 (2010-07-07)
 ------------------
 
