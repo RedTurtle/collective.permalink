@@ -7,12 +7,15 @@ setup(name='collective.permalink',
       version=version,
       description="Show a new link (permalink) in Plone contents. "
                   "This will not change if you move the content itself.",
-      long_description=open("README.txt").read() + "\n" +
+      long_description=open("README.rst").read() + "\n" +
                        open(os.path.join("docs", "HISTORY.txt")).read(),
       # Get more strings from
       # http://pypi.python.org/pypi?%3Aaction=list_classifiers
       classifiers=[
         "Framework :: Plone",
+        "Framework :: Plone :: 4.0",
+        "Framework :: Plone :: 4.1",
+        "Framework :: Plone :: 4.2",
         "Programming Language :: Python",
         ],
       keywords='plone plonegov permalink',
@@ -26,6 +29,7 @@ setup(name='collective.permalink',
       zip_safe=False,
       install_requires=[
           'setuptools',
+          'plone.uuid',
           # -*- Extra requirements: -*-
       ],
       entry_points="""

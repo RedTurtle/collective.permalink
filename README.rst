@@ -1,13 +1,14 @@
 Manual
 ======
 
-This product will add a `permalink`__ to every supported Plone content, using the Plone *resolveuid*
-feature.
+This product will add a `permalink`__ to every supported Plone content. A permalink is a link to the content
+that should never change even if you rename or move it.
 
 __ http://en.wikipedia.org/wiki/Permalink
 
-This will not work (and show anything) for contents without the *UID* information. You can however 
-customize and develop additional adapters for providing permalink for yours non-AT contents (or customize
+The default implementation is based on the Plone *resolveuid* feature.
+This will not work (and shows anything) for contents without the *plone.uuid* support. You can however 
+customize and develop additional adapters for providing permalink for yours types (or customize
 the default one).
 
 The new resource will be added to the *document actions* section.
@@ -32,7 +33,7 @@ Authors
 
 This product was developed by RedTurtle Technology team.
 
-.. image:: http://www.redturtle.net/redturtle_banner.png
+.. image:: http://www.redturtle.it/redturtle_banner.png
    :alt: RedTurtle Technology Site
-   :target: http://www.redturtle.net/
+   :target: http://www.redturtle.it/
 

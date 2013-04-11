@@ -5,10 +5,10 @@
   <object name="permalink" meta_type="CMF Action" i18n:domain="collective.permalink">
    <property name="title" i18n:translate="">Permalink</property>
    <property name="description" i18n:translate=""></property>
-   <property name="url_expr">string:${object/@@permalink_url}</property>
+   <property name="url_expr">object/@@permalink_url</property>
    <property name="icon_expr"></property>
    <property
-      name="available_expr">object/@@permalink_url/hasPermalink</property>
+      name="available_expr">object/@@permalink_url</property>
    <property name="permissions">
     <element value="View permalink"/>
    </property>

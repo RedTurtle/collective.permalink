@@ -9,8 +9,7 @@ class PermalinkUrlView(BrowserView):
 
     def __call__(self):
         context = self.context
-        return context.permalink
-
+        return self.permalink
 
     @property
     @memoize
@@ -21,7 +20,3 @@ class PermalinkUrlView(BrowserView):
         except TypeError:
             return None
 
-    
-    def hasPermalink(self):
-        """True of False if the context give a permalink or not"""
-        return self.permalink

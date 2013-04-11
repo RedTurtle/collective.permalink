@@ -15,16 +15,16 @@
   <include package=".browser" />
 
   <adapter 
-      for="Products.Archetypes.interfaces.IBaseObject"
+      for="plone.uuid.interfaces.IUUIDAware"
       provides=".interfaces.IPermalinkProvider"
-      factory=".adapters.ATPermalinkAdapter"
+      factory=".adapters.UUIDAwarePermalinkAdapter"
 	  />
 
   <genericsetup:registerProfile
       name="default"
       title="collective.permalink"
       directory="profiles/default"
-      description="Installs the collective.permalink package"
+      description="Show a new link (permalink) in Plone contents"
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
 
