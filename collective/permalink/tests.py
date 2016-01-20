@@ -1,12 +1,10 @@
-import unittest
-
-#from zope.testing import doctestunit
-#from zope.component import testing
-from Testing import ZopeTestCase as ztc
-
+# -*- coding: utf-8 -*-
 from Products.Five import fiveconfigure
 from Products.PloneTestCase import PloneTestCase as ptc
 from Products.PloneTestCase.layer import PloneSite
+from Testing import ZopeTestCase as ztc
+import unittest
+
 ptc.setupPloneSite()
 
 import collective.permalink
@@ -29,26 +27,6 @@ class TestCase(ptc.PloneTestCase):
 
 def test_suite():
     return unittest.TestSuite([
-
-        # Unit tests
-        #doctestunit.DocFileSuite(
-        #    'README.txt', package='collective.permalink',
-        #    setUp=testing.setUp, tearDown=testing.tearDown),
-
-        #doctestunit.DocTestSuite(
-        #    module='collective.permalink.mymodule',
-        #    setUp=testing.setUp, tearDown=testing.tearDown),
-
-
-        # Integration tests that use PloneTestCase
-        #ztc.ZopeDocFileSuite(
-        #    'README.txt', package='collective.permalink',
-        #    test_class=TestCase),
-
-        #ztc.FunctionalDocFileSuite(
-        #    'browser.txt', package='collective.permalink',
-        #    test_class=TestCase),
-
         ])
 
 if __name__ == '__main__':

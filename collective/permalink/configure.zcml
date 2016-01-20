@@ -8,17 +8,17 @@
   <five:registerPackage package="." initialize=".initialize" />
 
   <permission
-     id="collective.permalink.ViewPermalink"
-     title="View permalink"
-     />
+      id="collective.permalink.ViewPermalink"
+      title="View permalink"
+      />
 
   <include package=".browser" />
 
-  <adapter 
+  <adapter
       for="plone.uuid.interfaces.IUUIDAware"
       provides=".interfaces.IPermalinkProvider"
       factory=".adapters.UUIDAwarePermalinkAdapter"
-	  />
+	    />
 
   <genericsetup:registerProfile
       name="default"
