@@ -1,10 +1,18 @@
 Changelog
 =========
 
-0.2.2 (unreleased)
+1.0.0 (unreleased)
 ------------------
 
-- Nothing changed yet.
+Dropped Plone 4 compatibility.
+
+- upgrade to Plone5
+- clean up code using flake8 conventions
+- added tests
+- added control panel
+- added javascript "copy to clipboard" on click
+
+
 
 
 0.2.1 (2016-01-20)

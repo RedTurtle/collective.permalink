@@ -1,7 +1,8 @@
 # -*- coding: utf-8 -*-
 from Products.Five import BrowserView
-from plone.memoize.view import memoize
+
 from collective.permalink.interfaces import IPermalinkProvider
+from plone.memoize.view import memoize
 
 
 class PermalinkUrlView(BrowserView):
@@ -15,6 +16,6 @@ class PermalinkUrlView(BrowserView):
     def permalink(self):
         """Get the permalink info from the context"""
         try:
-            return IPermalinkProvider(self.context).getPermalink()
+            return IPermalinkProvider(self.context).get_permalink()
         except TypeError:
             return None
