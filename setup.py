@@ -21,10 +21,13 @@ setup(
     # Get more strings from
     # http://pypi.python.org/pypi?%3Aaction=list_classifiers
     classifiers=[
+        'Environment :: Web Environment',
         'Framework :: Plone',
-        'Framework :: Plone :: 5.0',
-        'Framework :: Plone :: 5.1',
+        'Framework :: Plone :: 5-latest',
         'Programming Language :: Python',
+        'Programming Language :: Python :: 2.7',
+        'Operating System :: OS Independent',
+        'License :: OSI Approved :: GNU General Public License v2 (GPLv2)',
     ],
     keywords='plone plonegov permalink',
     author='RedTurtle Technology',
@@ -37,12 +40,14 @@ setup(
     zip_safe=False,
     install_requires=[
         'setuptools',
+        'plone.api',
         'plone.uuid',
     ],
     extras_require={
         'test': [
             'plone.app.testing',
             'plone.app.contenttypes',
+            'plone.app.robotframework[debug]',
         ],
     },
     entry_points="""

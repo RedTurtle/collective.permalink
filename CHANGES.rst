@@ -9,10 +9,9 @@ Dropped Plone 4 compatibility.
 - upgrade to Plone5
 - clean up code using flake8 conventions
 - added tests
-- added control panel
+- added controlpanel
 - added javascript "copy to clipboard" on click
-
-
+  [iham]
 
 
 0.2.1 (2016-01-20)
