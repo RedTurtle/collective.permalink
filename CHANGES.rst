@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.0.0 (unreleased)
+1.0.0 (2017-06-28)
 ------------------
 
 Dropped Plone 4 compatibility.
