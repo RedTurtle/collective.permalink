@@ -1,20 +1,30 @@
 # -*- coding: utf-8 -*-
-from Products.CMFCore.utils import getToolByName
-from plone.uuid.interfaces import IUUID
+from zope.component import getUtility
+
+from plone.api import content
+from plone.api import portal
+from plone.registry.interfaces import IRegistry
 
 
 class UUIDAwarePermalinkAdapter(object):
+    """Permalink Adapter."""
 
     def __init__(self, context):
         self.context = context
 
-    def getPermalink(self):
-        context = self.context
-        portal_url = getToolByName(context, 'portal_url')
-        s_props = getToolByName(context, 'portal_properties').site_properties
-        use_view_action = s_props.typesUseViewActionInListings
-        if self.context.portal_type in use_view_action:
+    def get_permalink(self):
+        """Create a permalink."""
+        registry = getUtility(IRegistry)
+        types_use_view_action = frozenset(
+            registry.get('plone.types_use_view_action_in_listings', []),
+        )
+
+        if self.context.portal_type in types_use_view_action:
             suffix = '/view'
         else:
             suffix = ''
-        return '%s/resolveuid/%s%s' % (portal_url(), IUUID(context), suffix)
+        return '{0}/resolveuid/{1}{2}'.format(
+                    portal.get().absolute_url(),
+                    content.get_uuid(self.context),
+                    suffix,
+                )
