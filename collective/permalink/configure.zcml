@@ -53,7 +53,7 @@
       name="is_clipboardjs_enabled"
       class=".browser.PermalinkUrlWithClipBoardJSView"
       layer=".interfaces.IThemeSpecific"
-      permission="collective.permalink.ViewPermalink"
+      permission="zope2.View"
       />
 
   <browser:page
