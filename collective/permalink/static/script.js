@@ -16,7 +16,7 @@ require([
     var btns = [
       $('#plone-contentmenu-actions-permalink_with_clipboard'),
       $('#document-action-permalink_with_clipboard a'),
-    ]
+    ];
     btns.forEach(function(btn, index, array) {
       // Disable click on link
       btn.click(function(e) {
@@ -37,11 +37,11 @@ require([
       clipboard.on('success', function(e){
         msg = $('<div class="portalMessage info"><strong>Info</strong>Permalink has been copied to clipboard.</div>');
         $('#global_statusmessage').append(msg);
+      });
       clipboard.on('error', function(e){
         msg = $('<div class="portalMessage error"><strong>Error</strong>Couldn\'t copy Permalink to clipboard!</div>');
         $('#global_statusmessage').append(msg);
       });
     });
   });
-
 });

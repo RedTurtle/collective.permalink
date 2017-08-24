@@ -6,6 +6,8 @@ Changelog
 
 - fixed permission for view.
   [iham]
+- fixed Broken "Permalink (to Clipboard)" functionality #4
+  [enkidulan]
 
 
 1.0.0 (2017-06-28)
