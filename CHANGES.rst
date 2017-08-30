@@ -1,13 +1,18 @@
 Changelog
 =========
 
-1.0.1 (unreleased)
+1.0.2 (unreleased)
+------------------
+
+- fixed Broken "Permalink (to Clipboard)" functionality #4
+  [enkidulan]
+
+
+1.0.1 (2017-08-09)
 ------------------
 
 - fixed permission for view.
   [iham]
-- fixed Broken "Permalink (to Clipboard)" functionality #4
-  [enkidulan]
 
 
 1.0.0 (2017-06-28)
