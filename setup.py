@@ -32,7 +32,7 @@ setup(
     keywords='plone plonegov permalink',
     author='RedTurtle Technology',
     author_email='sviluppoplone@redturtle.it',
-    url='http://plone.org/products/collective.permalink',
+    url='https://github.com/collective/collective.permalink',
     license='GPL',
     packages=find_packages(exclude=['ez_setup']),
     namespace_packages=['collective'],
