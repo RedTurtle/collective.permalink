@@ -8,6 +8,8 @@ Changelog
   [enkidulan]
 - update url in setup.py, plone.org/products is gone
   [svx]
+- remove node_modules from repository and add .gitignore file
+  [cekk]
 
 1.0.1 (2017-08-09)
 ------------------
