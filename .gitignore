@@ -34,5 +34,5 @@ report.html
 !.gitkeep
 !.travis.yml
 !src/rer
-
+pip-selfcheck.json
 /node_modules
