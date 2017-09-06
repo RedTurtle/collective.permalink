@@ -1,4 +1,6 @@
 include *.rst
+include *.GPL
+include *.json
 
 recursive-include docs *
 recursive-include collective *
