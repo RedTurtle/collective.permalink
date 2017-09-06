@@ -6,7 +6,8 @@ Changelog
 
 - fixed Broken "Permalink (to Clipboard)" functionality #4
   [enkidulan]
-
+- update url in setup.py, plone.org/products is gone
+  [svx]
 
 1.0.1 (2017-08-09)
 ------------------
