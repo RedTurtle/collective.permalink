@@ -1,10 +1,18 @@
 Changelog
 =========
 
-1.0.3 (unreleased)
+
+1.0.4 (unreleased)
 ------------------
 
 - Nothing changed yet.
+
+
+1.0.3 (2018-03-21)
+------------------
+
+- fixed resource registration to make it work with plone-resource-compile.
+  [iham]
 
 
 1.0.2 (2017-09-06)
@@ -16,6 +24,7 @@ Changelog
   [svx]
 - remove node_modules from repository and add .gitignore file
   [cekk]
+
 
 1.0.1 (2017-08-09)
 ------------------

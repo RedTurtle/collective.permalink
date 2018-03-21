@@ -14,7 +14,7 @@ long_description = '\n\n'.join([
 
 setup(
     name='collective.permalink',
-    version='1.0.3.dev0',
+    version='1.0.4.dev0',
     description='Show a new link (permalink) in Plone contents. '
                 'This will not change if you move the content itself.',
     long_description=long_description,
