@@ -18,7 +18,7 @@
 
   <genericsetup:registerProfile
       name="uninstall"
-      title="collective.permalink"
+      title="collective.permalink (uninstall)"
       directory="profiles/uninstall"
       description="Uninstalls the collective.permalink Addon."
       provides="Products.GenericSetup.interfaces.EXTENSION"
@@ -64,9 +64,10 @@
       permission="cmf.ManagePortal"
       />
 
-  <browser:resourceDirectory
+  <plone:static
       directory="static"
-      name="collective.permalink.static"
+      type="plone"
+      name="permalink"
       />
 
 </configure>

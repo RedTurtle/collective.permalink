@@ -1,6 +1,6 @@
 require.config({
   paths: {
-    'clipboard': '++resource++collective.permalink.static/clipboard'
+    'clipboard': '++plone++permalink/clipboard'
   },
 });
 
