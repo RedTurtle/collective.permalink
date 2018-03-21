@@ -2,10 +2,18 @@ Changelog
 =========
 
 
-1.0.4 (unreleased)
+1.0.5 (unreleased)
 ------------------
 
 - Nothing changed yet.
+
+
+1.0.4 (2018-03-21)
+------------------
+
+- pypi version confusion... nevermind.
+  v 1.0.3 was removed.
+  [iham]
 
 
 1.0.3 (2018-03-21)
