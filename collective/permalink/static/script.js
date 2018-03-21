@@ -1,6 +1,6 @@
 require.config({
   paths: {
-    'clipboard': '++plone++permalink/clipboard'
+    'clipboard': '++plone++permalink/clipboard.min'
   },
 });
 
